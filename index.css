@@ -402,6 +402,14 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Header ----- */
 /* --------------------------------------- */
 
+/* Mobile/tablet: niente parallax */
+.header { background-attachment: scroll; }
+
+/* Solo desktop: effetto "fermo" */
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  .header { background-attachment: fixed; }
+}
+
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
         url('https://francescamelloni.github.io/Portfolio/images/header.jpeg');
