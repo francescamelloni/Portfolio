@@ -406,7 +406,7 @@ body:not(.user-is-tabbing) a:focus {
     /* immagine + overlay */
     background-image:
         linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.4)),
-        url('https://francescamelloni.github.io/Portfolio/images/header.jpeg');
+        url('https://francescamelloni.github.io/Portfolio/images/blender.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
