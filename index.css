@@ -398,42 +398,53 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--pink);
 }
 
-/* --------------------------------------- */
-/* ----- Header ----- */
-/* --------------------------------------- */
+    /* --------------------------------------- */
+    /* ----- Header ----- */
+    /* --------------------------------------- */
 
-/* Mobile/tablet: niente parallax */
-.header { background-attachment: scroll; }
-
-/* Solo desktop: effetto "fermo" */
-@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
-  .header { background-attachment: fixed; }
-}
-
-.header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    .header {
+    /* immagine + overlay */
+    background-image:
+        linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.4)),
         url('https://francescamelloni.github.io/Portfolio/images/header.jpeg');
-    height: 100vh;
-    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    font-size: var(--font-size-normal);
-}
+    background-size: cover;
+    background-repeat: no-repeat;
 
-.header__text {
+    /* mobile/tablet: niente parallax, così si vede */
+    background-attachment: scroll;
+
+    min-height: 100vh;          
+    font-size: var(--font-size-normal);
+    }
+
+    .header__text {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
+    }
 
-.header__text p {
+    .header__text p {
     margin: 1.5rem 0 3.5rem;
     max-width: var(--container-medium-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
-}
+    }
 
-@media(max-width: 500px) {
+    @media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+    .header {
+        /* il gradiente scorre, la foto resta fissa */
+        background-attachment: scroll, fixed;
+    }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+    .header {
+        background-attachment: scroll, scroll;
+    }
+    }
+
+    @media(max-width: 500px) {
     .header {
         text-align: center;
     }
@@ -441,7 +452,8 @@ body:not(.user-is-tabbing) a:focus {
     .header__text p {
         transform: scale(.8);
     }
-}
+    }
+
 
 /* --------------------------------------- */
 /* ----- Work ----- */
