@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>Il Tuo Nome | Studentessa & Progetti</title>
+
+  <meta name="description" content="Portfolio di una studentessa: chi sono, i miei progetti, gli strumenti che utilizzo e come contattarmi." />
+  <meta name="keywords" content="studentessa, portfolio, progetti, studio, appunti, quiz, fotografia" />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Progetti</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Strumenti</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Chi sono</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Francesca Melloni</span>
+        </h1>
+        <p>Studentessa di ingegneria informatica, secondo anno magistrale presso Politecnico di Torino</p>
+        <a href="#contact" class="btn btn--pink">Contattami</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Progetti ***** -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>I miei Progetti</h2>
+        <div class="work__boxes">
+
+    <!-- Progetto 1 -->
+    <div class="work__box">
+      <div class="work__text">
+        <h3>PORTFOLIO</h3>
+        <p>
+          Sito per il mio portfolio
+        </p>
+        <ul class="work__list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <div class="work__links">
+          <a href="#" target="_blank" class="link__text">Visita il progetto <span>&rarr;</span></a>
+          <a href="https://github.com/francescamelloni/Portfolio.git" title="Codice sorgente" target="_blank">
+            <img src="./images/github.svg" class="work__code" alt="GitHub">
+          </a>
+        </div>
+      </div>
+      <div class="work__image-box">
+        <img src="./images/prog1.png" class="work__image" alt="Anteprima Appunti Interattivi" />
+      </div>
+    </div>
+
+
+<!--
+    
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Strumenti che uso</h2>
+        <div class="client__logos">
+         
+          <img src="./images/html5.png" class="client__logo" alt="HTML5" />
+          <img src="./images/css3.png" class="client__logo" alt="CSS3" />
+          <img src="./images/javascript.png" class="client__logo" alt="JavaScript" />
+          <img src="./images/canva.png" class="client__logo" alt="Canva" />
+          <img src="./images/github-logo.png" class="client__logo" alt="GitHub" />
+          <img src="./images/latex.png" class="client__logo" alt="LaTeX" />
+        </div>
+      </div>
+    </section>
+  -->
+    
+    <!-- ***** About ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>Chi sono</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Ciao! Sono <strong>Francesca Melloni</strong>, una studentessa del POLITO
+            </p>
+            <a href="doc/cv.pdf" class="btn">Scarica il CV</a>
+          </div>
+
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/ritratto.png" alt="Foto profilo della studentessa" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contatti ***** -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contatti</h2>
+      <div class="contact__info">
+        <p>
+          Se vuoi darmi un feedback, fare una domanda o collaborare a un progetto, scrivimi pure.
+        </p>
+        <a href="mailto:tua.email@example.com" class="btn">franci.melloni@gmail.comm</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="#" title="Profilo Instagram">
+            <img src="./images/instagram.svg" class="footer__social-image" alt="Instagram">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="#" title="Profilo GitHub">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="#" title="Profilo LinkedIn">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+          </a>
+        </li>
+      </ul>
+
+      <p>&copy; 2025 — Il Tuo Nome</p>
+
+      <!-- (opzionale) Togli o lascia il bottone GitHub se non ti serve -->
+      <!--
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=tuoutente&repo=tuo-repo&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch on GitHub">
+        </iframe>
+      </div>
+      -->
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Torna su">
+    <img src="./images/arrow-up.svg" alt="Torna su" class="back-to-top__image"/>
+  </a>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
