@@ -507,8 +507,13 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.2);
 }
 
+
+
 .work__image-box {
-    margin-bottom: var(--gutter-normal);
+  border: 2px solid #ccc;     /* colore e spessore del bordo */
+  border-radius: 12px;        /* angoli arrotondati, opzionale */
+  padding: 1rem;              /* spazio interno */
+  background: #fff;           /* sfondo dietro l’immagine */
 }
 
 @media(min-width: 901px) {
