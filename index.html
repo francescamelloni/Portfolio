@@ -46,40 +46,122 @@
     <section class="work" id="work">
       <div class="row">
         <h2>I miei Progetti</h2>
+
         <div class="work__boxes">
 
-    <!-- Progetto 1 -->
-    <div class="work__box">
-      <div class="work__text">
-        <h3>MARKET LESS</h3>
-        <p>
-          Prototipo di un’app mobile per la spesa online, sviluppato durante il corso completo di corsoux.it.
-          Il progetto esplora il flusso d’acquisto digitale con attenzione a usabilità e chiarezza comunicativa.
-        </p>
+          <!-- Progetto 1 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>MARKET LESS</h3>
+              <p>
+                Prototipo di un’app mobile per la spesa online, sviluppato durante il corso completo di corsoux.it.
+                Il progetto esplora il flusso d’acquisto digitale con attenzione a usabilità e chiarezza comunicativa.
+              </p>
 
-        <ul class="work__list">
-          <li>User Research</li>
-          <li>Interaction Design</li>
-          <li>Visual Design</li>
-          <li>UX Writing</li>
-        </ul>
+              <ul class="work__list">
+                <li>User Research</li>
+                <li>Interaction Design</li>
+                <li>Visual Design</li>
+                <li>UX Writing</li>
+              </ul>
 
-        <div class="work__links">
-          <a href="https://www.behance.net/gallery/234722389/MARKET-LESS" target="_blank" class="link__text">
-            Visita il progetto <span>&rarr;</span>
-          </a>
-        </div>
-      </div>
+              <div class="work__links">
+                <a href="https://www.behance.net/gallery/234722389/MARKET-LESS" target="_blank" class="link__text">
+                  Visita il progetto <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
 
-      <!-- Immagine affiancata, usa le classi esistenti -->
-      <div class="work__image-box">
-        <img src="./images/Slide1.png" alt="Anteprima del prototipo Market Less" />
-      </div>
-    </div>
+            <!-- Immagine affiancata, usa le classi esistenti -->
+            <div class="work__image-box">
+              <img src="./images/Slide1.png" alt="Anteprima del prototipo Market Less" />
+            </div>
+          </div>
 
+          <!-- Progetto 2 -->
+          <div class="work__box" id="anticorpi">
+            <div class="work__text">
+              <h3>ANTICORPI AL LAVORO</h3>
 
+              <p>
+                Progetto sviluppato durante il corso di Informatica Grafica, primo anno magistrale al Politecnico di Torino.
+                Ho realizzato una stanza interamente modellata in Blender, senza importare alcun oggetto esterno, curando geometrie, materiali e illuminazione.
+                Sullo stesso tema ho sviluppato anche una applicazione interattiva in OpenGL, incentrata sull’esplorazione della scena 3D.
+              </p>
 
+              <ul class="work__list">
+                <li>Blender — modellazione, materiali, illuminazione</li>
+                <li>OpenGL — interazione e pipeline grafica</li>
+                <li>Ottimizzazione risorse e resa visiva</li>
+              </ul>
 
+              <div class="work__links" style="gap:1rem; flex-direction:column; align-items:flex-start;">
+                <a href="./Progetti/Anticorpi_eseguibile.zip" class="btn" download>
+                  Scarica l’app (Windows · ZIP)
+                </a>
+                <p style="margin:0; font-size:1.4rem; opacity:0.9;">
+                  Dopo il download, estrai lo ZIP e apri il file <strong>OpenGLApp.exe</strong>.
+                </p>
+
+                <p style="margin:1rem 0 0; font-size:1.4rem; opacity:0.9;">
+                  Se non vuoi scaricare l’applicativo, guarda la demo!
+                </p>
+
+                <a href="./Progetti/Anticorpi_demo.mp4" class="btn btn--secondary" target="_blank" rel="noopener">
+                  Guarda la demo
+                </a>
+              </div>
+            </div>
+            
+            <div class="work__image-box">
+              <!-- Slider orizzontale a scorrimento (touch + mouse) -->
+              <div class="slider" aria-label="Galleria render — ANTICORPI AL LAVORO">
+                <img src="./images/RENDERING/Render0.png" alt="Render 1 della stanza modellata in Blender" />
+                <img src="./images/RENDERING/Render1.png" alt="Render 2 della stanza modellata in Blender" />
+                <img src="./images/RENDERING/Render2.png" alt="Render 3 della stanza modellata in Blender" />
+                <img src="./images/RENDERING/Render3.png" alt="Render 3 della stanza modellata in Blender" />
+              </div>
+          </div>
+          </div>
+
+          <!-- Progetto: Replica pubblicità delle Olimpiadi -->
+          <div class="work__box" id="olimpiadi">
+            <div class="work__text">
+              <h3>REPLICA PUBBLICITÀ DELLE OLIMPIADI</h3>
+
+              <p>
+                Progetto sviluppato per il corso di Computer Animation (magistrale, Politecnico di Torino).
+                Ho replicato una sequenza di una campagna delle Olimpiadi realizzando tutti gli asset da zero in Blender:
+                modellazione, materiali, rigging, animazione, lighting e compositing.
+              </p>
+
+              <ul class="work__list">
+                <li>Blender — modellazione &amp; rigging</li>
+                <li>Animazione — keyframing &amp; camera</li>
+                <li>Lighting &amp; rendering (Cycles/Eevee)</li>
+                <li>Compositing &amp; color</li>
+              </ul>
+
+              <div class="work__links" style="gap:1rem; flex-wrap:wrap;">
+                <!-- opzionale: link esterno al file se vuoi aprirlo in un’altra scheda -->
+                <a href="./Progetti/Computer_animation.mp4" class="link__text" target="_blank" rel="noopener">
+                  Guarda in un’altra scheda <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <!-- Video incorporato: parte quando premi play -->
+              <video class="project-video" controls playsinline preload="metadata" poster="./images/olimpiadi/poster.jpg">
+                <source src="./Progetti/Computer_animation.mp4" type="video/mp4" />
+                Il tuo browser non supporta la riproduzione video.
+              </video>
+            </div>
+          </div>
+
+        </div> <!-- chiusura .work__boxes -->
+      </div> <!-- chiusura .row -->
+    </section> <!-- chiusura .work -->
     
     <section class="client" id="clients">
     <div class="row">

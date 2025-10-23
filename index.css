@@ -643,3 +643,58 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+/* ----- Slider per i render dei progetti ----- */
+.slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: .5rem;
+}
+
+.slider img {
+  flex: 0 0 100%;
+  max-height: 440px;      /* regola se vuoi immagini più alte/basse */
+  object-fit: cover;
+  border-radius: 8px;
+  scroll-snap-align: center;
+}
+
+.slider__hint {
+  margin-top: .8rem;
+  font-size: 1.4rem;
+  opacity: .8;
+}
+
+/* Desktop: immagine grande affiancata al testo (già gestito da .work__image-box) */
+@media (min-width: 901px) {
+  .slider img { flex-basis: 100%; }
+}
+
+/* Mobile: va già in colonna per via di .work__box column-reverse */
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-primary, #333);
+  border: 2px solid var(--color-primary, #333);
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-primary, #333);
+  color: #fff;
+}
+.project-video {
+  width: 100%;
+  max-height: 440px;
+  border-radius: 8px;
+  display: block;
+  background: #111;
+}
+/* Forza i progetti uno sotto l'altro */
+.work__boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem; /* spazio verticale tra progetti */
+}
