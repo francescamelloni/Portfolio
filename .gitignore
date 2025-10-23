@@ -1,0 +1,4 @@
+# Ignora i video troppo pesanti
+*.mp4
+*.mov
+*.avi
